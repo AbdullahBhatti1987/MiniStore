@@ -1,0 +1,321 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: "Mukta-Regular";
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: "Mukta-ExtraLight";
+    src: url(./fonts/mukta/Mukta-ExtraLight.ttf);
+}
+@font-face {
+    font-family: "Mukta-Light";
+    src: url(./fonts/mukta/Mukta-Light.ttf);
+}
+@font-face {
+    font-family: "Mukta-Medium";
+    src: url(./fonts/mukta/Mukta-Medium.ttf);
+}
+@font-face {
+    font-family: "Mukta-Regular";
+    src: url(./fonts/mukta/Mukta-Regular.ttf);
+}
+
+
+/* @import url(./fonts/mukta/Mukta-ExtraBold.ttf); */
+a{
+    text-decoration: none;
+    display: inline-block;
+}
+ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    width: 100%;
+    height: 100%;
+}
+
+header{
+    height: 90px;
+    width: 100%;
+    position: sticky;
+    top: 0px;
+    z-index: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #F8F9FA;
+}
+header div.logo{
+    width: 20%;
+    display: flex;
+    flex-direction: row;
+    /* justify-content: center; */
+    align-items: center;
+    height: 100%;
+}
+header div.logo h1{
+    margin-left: 35px;
+    font-size: 35px;
+    font-family: "Mukta-ExtraLight";
+}
+header div.navbar{
+width: 65%;
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+height: 100%;
+}
+header div.navbar ul{
+    justify-content: right;
+} 
+header div.navbar ul li a{
+    color: black;
+    padding: 20px;
+    font-size: 17px;
+    font-family: "Mukta-ExtraLight";
+}
+header div.navbar ul li a:hover{
+    color: #72AEC8;;
+}
+header div.icon{
+    width: 15%;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    height: 100%;
+}
+header div.icon ul li a{
+    padding: 20px 10px;
+    color: black;
+    font-size: 15px;
+}
+header div.icon ul li a:hover{
+    color: #72AEC8;
+}
+
+div.container{
+    position: relative;
+    margin-top: -50px;
+    box-sizing: border-box;
+    width: 100%;
+    height: 90vh;
+    padding: 110px;
+}
+div#watch{
+    background-image: url(./images/mainbackground.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-color: #EDF1F3;
+}
+div.container div.mainheading h1{
+    width: 50%;
+    height: 100%;
+    margin-top: 50px;
+}
+div.container div.mainheading h1{
+    font-size: 80px;
+    font-family: "Mukta-ExtraLight";
+    font-weight: 100;
+    line-height: 100px;
+}
+
+div.container div.mainheading button{
+    padding: 12px 50px;
+    font-size: large;
+    color: white;
+    background-color: black;
+    margin-top: 50px;
+}
+div.container1{
+    padding: 50px 100px;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+div.container1 div.delivery{
+    width: 25%;
+    margin: 0px 15px;
+
+}
+div.container1 div.delivery i{
+    display: inline-block;
+    font-size: 25px;
+    margin-right: 10px;
+    color: #72AEC8;
+}
+div.container1 div.delivery h1{
+    display: inline-block;
+    font-size: x-large;
+}
+div.container1 div.delivery p{
+    margin-left: 35px;
+}
+div.heading{
+    width: 100%;
+    height: 100px;
+    padding: 0px 120px;
+    position: sticky;
+    top: 0px;
+    z-index: 2;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+}
+div.heading h1{
+    font-size: 50px;
+    font-weight: 100;
+}
+div.heading span{
+    letter-spacing: 5px;
+}
+div.container1 div.gallery{
+    position: relative;
+    margin: 0px 12px;
+}
+
+div.container1 div.gallery span:nth-child(4){
+    float: left;
+    text-align: left;
+    width: 50%;
+    font-size: x-large;
+}
+div.container1 div.gallery span:nth-child(3){
+    float: right;
+    text-align: right;
+    width: 50%;
+    color: #72AEC8;
+    font-size: x-large;
+}
+
+div.container1 div.gallery button{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    bottom: 20%;
+    left: 11%;
+    align-items: center;
+    font-size: large;
+    padding: 10px 50px;
+    color: white;
+    background-color: black;
+    letter-spacing: 1px;
+    border: none;
+    transition: 0.5s ;
+}
+div.container1 div.gallery button:hover{
+    background-color: #72AEC8;
+}
+
+div.container1 div.gallery button i{
+    padding-left: 10px;
+}
+
+div#iphonebox{
+    background-image: url(./images/iphonebox.JPG);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-color: #EDF1F3;
+    padding-left: 250px;
+}
+div#iphonebox div.mainheading h1{
+    margin: 0px ;
+    padding: 0px;
+}
+div.container1 div.gadgets{
+    box-sizing: content-box;
+    width: 33.3%;
+    margin: 10px;
+}
+div.container1 div.gadgets img{
+    width: 100%;
+    
+}
+
+div.container1 div.gadgets div.inner{
+    padding: 0px 15px;
+}
+
+div.container1 div.gadgets div.inner p{
+    color: gray;
+    font-size: large;
+    line-height: 20px;
+    margin-top: 10px;
+}
+div.container1 div.gadgets div.inner span a{
+    font-size: x-large;
+    line-height: 0px;
+}
+div.container1 div.gadgets div.inner span a:hover{
+    color: #72AEC8;
+    transition: 0.3s;
+}
+div.qoute{
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.1;
+
+}
+div.qoute i{
+    font-size: 120px;
+}
+
+div.message{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 260px;
+}
+
+div.message h1{
+    font-family: "Mukta-ExtraLight";
+    font-weight: 100;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+.top a{
+    text-decoration: underline;
+    color: black;
+}
+a:visited{
+    text-decoration: underline;
+    color: black;
+}
+
+
+
+
+
+
+
+
+
+
+
+.webbgcolor{
+    background-color:#EDF1F3;
+   }
+   .webfcolor{
+    background-color:#EDF1F3;
+   }
+   
+
+   .hover{
+    color: #72AEC8;
+   }
